@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-family: 'Roboto-Regular', sans-serif;
 }
 
 .card{
@@ -41,8 +42,7 @@ body{
     width: 300px;
 }
 
-/* for reuasability */
-.important-message {
+.header-message {
     color: #2A2D45;
     font-size: 40px;
     font-weight: bolder;
@@ -56,7 +56,6 @@ body{
 
 .paragraph {
     font-size: 15px;
-    font-family: 'Roboto-Regular', sans-serif;
 }
 
 .content ul{
@@ -64,7 +63,6 @@ body{
     padding: 0px;
     max-width: 320px;
     list-style: none;
-    font-family: 'Roboto-Regular', sans-serif;
     margin-bottom: 25px;
 }
 
@@ -75,7 +73,9 @@ body{
     font-weight: 600;
 }
 
-.content ul > li:before {
+/* Display the tick mark as the bullet point */
+
+.content ul li:before {
     content: "";
     height: 12px;
     width: 12px;
@@ -110,7 +110,6 @@ body{
 .label-section label{
     font-size: 12px;
     font-weight: bold;
-    font-family: 'Roboto-Regular', sans-serif;
 }
 
 .label-section .error-message{
@@ -118,7 +117,6 @@ body{
     color: red;
     font-size: 12px;
     font-weight: bold;
-    font-family: 'Roboto-Regular', sans-serif;
 }
 
 #subscribe-form input{

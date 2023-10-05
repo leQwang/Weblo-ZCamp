@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Calistoga&family=Lexend:wght@300&family=Open+Sans&family=Sacramento&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Calistoga&family=Fraunces:opsz,wght@9..144,700&family=Lexend:wght@300&family=Open+Sans&family=Sacramento&display=swap');
+
 body{
   margin: 0px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 html {
@@ -93,7 +97,7 @@ html {
   color: rgb(255, 255, 255);
 }
 
-/* Header in item1*/
+/* Header in item1 */
 header{
   display: flex;
   flex-direction: column;
@@ -101,9 +105,14 @@ header{
   font-weight: bold;
   font-size: 35px;
   transform: translate(0, 40%);
+  text-align: center;
 }
 
-/* Item that contain content */
+header h1{
+  font-family: 'Fraunces', serif;
+}
+
+/* Item that contain text */
 .item-content{
   display: flex;
   flex-direction: column;
@@ -120,10 +129,10 @@ header{
 .item-content div h2{
   display: flex;
   justify-content: center;
+  font-family: 'Fraunces', serif;
 }
 
 .item-content div p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: grey;
@@ -134,6 +143,11 @@ header{
   text-decoration: solid underline #FBEECB 6px;
   font-weight: bold;
   font-size: 20px;
+  transition-duration: 0.7s;
+}
+
+.item2-link:hover{
+  background-color: #FBEECB;
 }
 
 /* Item that contain only image */
@@ -146,7 +160,15 @@ header{
   text-decoration: solid underline #FCDAD1 6px;
   font-weight: bold;
   font-size: 20px;
+  transition-duration: 0.7s;
+
 }
+
+.item5-link:hover{
+  background-color: #FCDAD1;
+}
+
+/* Item 6 and 7 contain both text and background image */
 
 .item6{
   color: #25544C;
@@ -164,7 +186,6 @@ header{
 
 .item6 div p{
   color: #25544C;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -185,7 +206,6 @@ header{
 
 .item7 div p{
   color: #1E4F60;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -203,6 +223,7 @@ header{
   font-size: 50px;
   font-weight: 900;
   color: #B2B1AF;
+  font-family: 'Fraunces', serif;
 }
 
 .client-testimonials{
@@ -226,7 +247,6 @@ header{
 }
 
 .client p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: grey;
@@ -237,6 +257,7 @@ header{
   font-weight: bold;
   font-size: 20px;
   margin: 5px 0 0 0;
+  font-family: 'Fraunces', serif;
 }
 
 .client-occupation{
@@ -266,6 +287,7 @@ footer{
 .footer-list{
   display: flex;
   flex-direction: row;
+  padding: 0px;
 }
 
 .footer-item{
@@ -281,11 +303,15 @@ footer{
   color: #2C7365;
 }
 
+.footer-item a:hover{
+  color: black;
+}
+
 .social-media{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 10%;
+  width: 20%;
 }
 
 .image-mobile{
@@ -312,7 +338,7 @@ footer{
 
   .nav-bar-mobile button{
     background-color: #ffffff00;
-    padding: 5px;
+    border: none;
   }
 
   #hamburger{
@@ -351,7 +377,7 @@ footer{
   }
   
   header{
-    font-size: 4vw;
+    font-size: 6vw;
     transform: translate(0, 15%);
   }
 
@@ -399,6 +425,10 @@ footer{
   
   .client{
     width: 100%;
+  }
+
+  .client-occupation{
+    margin: 10px 0 40px 0;
   }
 
   /* Image grid section */
