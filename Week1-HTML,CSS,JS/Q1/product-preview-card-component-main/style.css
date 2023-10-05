@@ -1,0 +1,150 @@
+body{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3EBE4;
+    margin: 0px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.image .card-image-mobile{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.category{
+    position: relative;
+    margin: 5px 0px;
+    letter-spacing: .4em;
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #6e6e6e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#000000;    
+    text-shadow: 1px 0 #000000;
+    letter-spacing:1px;
+    font-weight:bold;    
+    font-size: xx-large;
+    margin: 5px 0px 15px 0px;
+}
+
+.description{
+    margin: 0px;
+    color: #6e6e6e;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.sale-price{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #3D816A;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.original-price{
+    font-size: 15px;
+    color: #6e6e6e;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.add-card-button{
+    background-color: #3D816A;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 35px;
+}
+
+.add-card-button div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.add-card-button:hover{
+    background-color: #275746;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+    .card{
+        flex-direction: column;
+        width: 320px;
+        height: fit-content;
+    }
+
+    .image{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .image .card-image-destop{
+        display: none;
+    }
+
+    .image .card-image-mobile{
+        display: block;
+        height: fit-content;
+    }
+
+    .content{
+        justify-content: center;
+        overflow: visible;
+        width: 94%;
+        padding: 10px;
+        padding: auto;
+
+    }
+
+    .add-card-button{
+        width: 100%;
+    }
+}
+    
+
+
