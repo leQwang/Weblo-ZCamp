@@ -102,7 +102,7 @@ nav{
 }
 
 .navbar__cart--empty{
-    height: 100px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,6 +246,7 @@ nav{
     display: none;
     width: 25px;
     margin: 20px 0 15px 67%;
+    cursor: pointer;
 }
 
 #icon--previous{
@@ -516,5 +517,7 @@ nav{
         margin: 20px 0 0 0;
     }
 
-    
+    .navbar__cart{
+        top: 13%;
+    }
 }

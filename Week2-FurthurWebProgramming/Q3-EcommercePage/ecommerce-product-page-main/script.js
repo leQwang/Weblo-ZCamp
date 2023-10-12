@@ -153,7 +153,6 @@ function minusQuantity() {
 function addToCart() {
   if (quantity > 0) {
     total += quantity;
-    alert(`You added ${quantity} items to your cart!`);
     navbarCart.style.display = "none";
     showCartToggle = false;
   }
