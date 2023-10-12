@@ -174,23 +174,28 @@ nav{
 
 /* Mobile Menu */
 .navbar__mobile--menu{
-    /* display: none; */
+    display: flex;
     flex-direction: column;
-    align-items: center;
     position: absolute;
-    width: 100%; 
-    top: 80px; 
-    right: -100%;
-    transition: 0.3s;
+    width: 60%; 
+    left: -60%;
+    transition: 0.5s;
     height: 100vh;
     background-color: white;
     z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.navbar__mobile--menu #icon__close--menu{
+    margin: 30px 20px;
 }
 
 .navbar__mobile--menu div{
     padding: 10px;
     width: 100%;
-    text-align: center;
+    text-align: start;
+    margin: 5px 0 0 15px;
 }
 
 .navbar__mobile--menu div:hover{
@@ -204,7 +209,7 @@ nav{
 }
 
 .show-menu {
-    right: 0;
+    left: 0;
 }
 
 /* Body Section */
@@ -324,7 +329,7 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 50px;
-    padding: 80px 60px 0 0;
+    padding: 5vw 60px 0 0;
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -429,5 +434,15 @@ nav{
 
     .navbar__desktop--menu{
         display: none;
+    }
+
+    .div__add--cart--section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #button__add--cart{
+        height: 50px;
+        margin: 0;
     }
 }

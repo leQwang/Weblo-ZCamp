@@ -1,9 +1,14 @@
 const hamburger = document.querySelector('#icon__hamburger');
 const nav = document.querySelector('.navbar__mobile--menu');
+const iconCloseMenu = document.querySelector('#icon__close--menu');
 let showMenu = false;
 
 hamburger.addEventListener('click', () => {
-  nav.classList.toggle('show-menu');
+  nav.classList.add('show-menu');
+});
+
+iconCloseMenu.addEventListener('click', () => { 
+  nav.classList.remove('show-menu');
 });
 
 // Desktop switching images
