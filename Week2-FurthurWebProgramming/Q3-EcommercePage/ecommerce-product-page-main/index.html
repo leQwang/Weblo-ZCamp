@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body class="body__opacity--layer">
   <nav>
     <div class="navbar__desktop">
         <div class="navbar__desktop--left-section">
@@ -33,7 +33,7 @@
         <div class="navbar__desktop--right--section">
           <img src="./images/icon-cart.svg" alt="cart" id="icon__cart">
           <img src="./images/image-avatar.png" alt="avatar" id="image__avatar">
-        </div>
+        </div>  
       </div>
     </div>
   </nav>
@@ -47,25 +47,89 @@
     <div><a href="#">About</a></div>
     <div><a href="#">Contact</a></div>
   </div>
-  Collections
-  Men
-  Women
-  About
-  Contact
 
-  Sneaker Company
+  <div class="div__body">
+    <!-- Modal for the images -->
+    <div id="myModal">
+      <div class="div__image--section">
+        <div class="div__desktop--image--section">
+          <img src="./images/icon-close.svg" alt="icon-close" id="icon--close">
+          <div class="div__main--image--container">
+            <img src="./images/icon-previous.svg" alt="icon-previous" id="icon--previous" onclick="previousImage()">
+            <img src="./images/image-product-1.jpg" alt="image-product-1" class="main--image">
+            <img src="./images/icon-next.svg" alt="icon-next" id="icon--next" onclick="nextImage()">
+          </div>
 
-  Fall Limited Edition Sneakers
+          <div class="div__desktop--thumbnail--images">
+            <div class="div__thumbnail--item div__desktop--thumbnail--image--item--1 selected--image">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" class="image--thumbnail--1">
+            </div>
+            <div class="div__thumbnail--item div__desktop--thumbnail--image--item--2">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" class="image--thumbnail--2">
+            </div>
+            <div class="div__thumbnail--item div__desktop--thumbnail--image--item--3">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" class="image--thumbnail--3">
+            </div>
+            <div class="div__thumbnail--item div__desktop--thumbnail--image--item--4">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" class="image--thumbnail--4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+    <div class="div__image--section div__image--section--under">
+      <div class="div__desktop--image--section">
+        <img src="./images/image-product-1.jpg" alt="image-product-1" class="main--image main--image--under">
 
-  $125.00
-  50%
-  $250.00
+        <div class="div__desktop--thumbnail--images">
+          <div class="div__thumbnail--item thumbnail--item--1--under">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" class="image--thumbnail--1--under">
+          </div>
+          <div class="div__thumbnail--item thumbnail--item--2--under">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" class="image--thumbnail--2--under">
+          </div>
+          <div class="div__thumbnail--item thumbnail--item--3--under">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" class="image--thumbnail--3--under">
+          </div>
+          <div class="div__thumbnail--item thumbnail--item--4--under">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" class="image--thumbnail--4--under">
+          </div>
+        </div>
 
-  0
-  Add to cart
+      </div>
+    </div>
+    
+
+    <div class="div__information--section">
+      <span class="span__company--label">Sneaker Company</span>
+      <h1 class="h1__product--title">Fall Limited Edition Sneakers</h1>
+      <span class="span__product--description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.      
+      </span>
+
+      <div class="div__price--section">
+        <div class="div__price--tag">
+          <h1 class="h1__current-price">$125.00</h1>
+          <span class="span__sale--value">50%</span>
+        </div>
+        <span class="span__original--price"><strike>$250.00</strike></span>
+      </div>
+
+      <div class="div__add--cart--section">
+        <div class="div__quantity--selection">
+          <button id="minus--button" onclick="minusQuantity()"><img src="./images/icon-minus.svg" alt="icon-minus"></button>
+          <h3 id="quantity--value">0</h3>
+          <button id="add--button" onclick="addQuantity()"><img src="./images/icon-plus.svg" alt="icon-plus"></button>
+        </div>
+        <button id="button__add--cart" onclick="addToCart()"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+      </div>
+    </div>
+
+  </div>
+  
+
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
