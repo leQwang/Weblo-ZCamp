@@ -304,6 +304,10 @@ nav{
     margin: 0 10px;
 }
 
+.div__thumbnail--item:hover{
+    opacity: 0.9;
+}
+
 .div__desktop--thumbnail--images img{
     width: 10vw;
     height: 10vw;
@@ -398,11 +402,20 @@ nav{
     overflow: hidden;
 }
 
+#quantity--value{
+    padding: 0 15px;
+}
+
 .div__quantity--selection button{
     border: none;
     background-color: #F7F9FD;
     padding: 0 2rem;
     cursor: pointer;
+}
+
+.div__quantity--selection button:hover{
+    background-color: #cad1df;
+    opacity: 0.8;
 }
 
 #button__add--cart{
@@ -418,6 +431,12 @@ nav{
     background-color: #FF7D1C;
     font-weight: bold;
     color: white;
+}
+
+#button__add--cart:hover{
+    background-color: #FF7D1C;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 #button__add--cart > img{
