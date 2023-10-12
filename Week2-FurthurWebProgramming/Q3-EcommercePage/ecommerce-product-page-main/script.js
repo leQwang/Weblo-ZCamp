@@ -67,8 +67,17 @@ const underModel = document.querySelector('.div__image--section--under');
 const iconPrev = document.querySelector('#icon--previous');
 const iconNext = document.querySelector('#icon--next');
 const mainImageContainer = document.querySelector('.div__main--image--container');
+let screenWidth = window.innerWidth;
 
-mainImage.addEventListener('click', () => {
+//Help adjust along the screen size
+window.onresize = resize;
+function resize()
+{
+  screenWidth = window.innerWidth;
+}
+
+//Detect when should add the modal class
+function handleClickMainImage(){
   document.querySelector(`.thumbnail--item--${currentImage}--under`).classList.add('selected--image');
   document.querySelector(".main--image--under").src = `./images/image-product-${currentImage}.jpg`;
   myModal.classList.add('modal');
@@ -77,6 +86,12 @@ mainImage.addEventListener('click', () => {
   iconPrev.style.display = "block";
   iconNext.style.display = "block";
   mainImageContainer.style.width = "800px";
+}
+
+mainImage.addEventListener('click', () => {
+  if (screenWidth > 425) {
+    handleClickMainImage();
+  }
 });
 
 window.onclick = function(event) {
