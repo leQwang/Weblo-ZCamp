@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="navbar__desktop--right--section">
-          <img src="./images/icon-cart.svg" alt="cart" id="icon__cart">
+          <img src="./images/icon-cart.svg" alt="cart" id="icon__cart" onclick="showCart()">
           <img src="./images/image-avatar.png" alt="avatar" id="image__avatar">
         </div>  
       </div>
@@ -46,6 +46,31 @@
     <div><a href="#">Women</a></div>
     <div><a href="#">About</a></div>
     <div><a href="#">Contact</a></div>
+  </div>
+
+  <div class="navbar__cart">
+    <span class="navbar__cart--label">Cart</span>
+    <hr>
+    <div class="navbar__cart--empty">
+      <span class="navbar__cart--empty--label">Your cart is empty.</span>
+    </div>
+    <div class="navbar__cart--filled">
+      <div class="navbar__cart--container">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" class="navbar__cart--product--thumbnail">
+        <div class="navbar__cart--content">
+          <span class="navbar__cart--content--label">Fall Limited Edition Sneakers</span>
+          <div class="navbar__cart--price--calculation">
+            <span class="navbar__cart--content--price">$125.00</span>
+            <span class="navbar__cart--content--quantity">x1</span>
+            <span class="navbar__cart--content--total">$375.00</span>
+          </div>
+        </div>
+        <img src="./images/icon-delete.svg" alt="icon--delete" class="icon--delete" onclick="deleteItem()">
+      </div>
+
+      <button class="button__checkout">Checkout</button>
+
+    </div>
   </div>
 
   <div class="div__body">
