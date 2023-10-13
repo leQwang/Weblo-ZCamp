@@ -136,6 +136,7 @@ const quantityNumber = document.querySelector('#quantity--value');
 const minusButton = document.querySelector('#minus--button');
 const addButton = document.querySelector('#add--button');
 const addCartButton = document.querySelector('#button__add--cart');
+const cartItemQuantity = document.querySelector('.cart__number--of--item');
 
 // Use textContent instead of innerHTML
 function addQuantity() {
@@ -158,6 +159,7 @@ function addToCart() {
   }
   quantity = 0;
   quantityNumber.textContent = quantity;
+  cartItemQuantity.textContent = total;
 }
 
 const cartIcon = document.querySelector('#icon__cart');
@@ -192,5 +194,6 @@ function deleteItem(){
   total = 0;
   emptyCart.style.display = "flex";
   filledCart.style.display = "none";
+  cartItemQuantity.textContent = total;
 }
 
