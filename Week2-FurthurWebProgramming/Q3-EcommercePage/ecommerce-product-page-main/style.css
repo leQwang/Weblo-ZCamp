@@ -467,7 +467,7 @@ nav{
     }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 600px){
     .div__body{
         margin: 0;
         flex-direction: column;
